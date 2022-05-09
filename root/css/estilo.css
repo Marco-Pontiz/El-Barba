@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #593b3b;
+  /*------Extend------*/
+  /*------Mixin------*/
+}
+
+body header {
+  background: #382f2f;
+  border-bottom: 1px solid #f4ff63;
+}
+
+body header .nav-link {
+  color: #fbffc4;
+}
+
+body header .h-1 {
+  font-family: 'Times New Roman', Times, serif;
+  color: #fbffc4;
+  margin-left: 1;
+}
+
+body main .menu {
+  text-align: center;
+}
+
+body main .row {
+  width: 100%;
+}
+
+body main .anim {
+  color: #fbffc4;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+body main .col-6 {
+  background-color: #382f2f;
+  color: #fbffc4;
+  border: 1px solid #f4ff63;
+}
+
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+body main .anima {
+  color: #fbffc4;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+body main .formu-container-fluid {
+  width: 400px;
+  background-color: #382f2f;
+  padding: 30px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 4px;
+  border: 1px solid #f4ff63;
+  color: #fbffc4;
+}
+
+body main .form-text {
+  color: #fbffc4;
+}
+
+body main .Img {
+  width: 600px;
+}
+
+body footer {
+  background-color: #382f2f;
+  border-top: 1px solid #f4ff63;
+  color: #fbffc4;
+  width: 100%;
+}
+
+body .button-basic, body .button-report, body .button-submit {
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+body .button-report {
+  background-color: red;
+}
+
+body .button-submit {
+  background-color: green;
+  color: white;
+}
+
+body .prueba1 {
+  color: #fbffc4;
+  font-size: 25px;
+  font-weight: bold;
+  border: 1px solid blue;
+  background-color: #382f2f;
+}
+
+@media screen and (max-width: 320px) {
+  header {
+    background-color: #382f2f;
+    border-bottom: 1px solid #f4ff63;
+    width: 320px;
+  }
+  header .nav-item {
+    width: 100%;
+  }
+  header .h-1 {
+    text-align: center;
+  }
+  main {
+    width: 100%;
+  }
+  .s-form-container-fluid {
+    width: 100%;
+  }
+  .formu-container-fluid {
+    width: 100%;
+    background-color: #382f2f;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 4px;
+    border: 1px solid #f4ff63;
+    color: #fbffc4;
+    text-align: center;
+  }
+  .form-control {
+    width: 100%;
+  }
+  .mb-3 {
+    width: 100%;
+  }
+  .rounded {
+    width: 100%;
+  }
+  .row {
+    width: 100%;
+    margin: 0;
+  }
+  footer {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /*En General*/
+  * {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  header {
+    background-color: #382f2f;
+    border-bottom: 1px solid #f4ff63;
+    width: 100%;
+  }
+  header .h-1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #fbffc4;
+    margin-left: 1;
+  }
+  main {
+    width: 100%;
+  }
+  main .formu-container-fluid {
+    width: 400px;
+    background-color: #382f2f;
+    padding: 30px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 4px;
+    border: 1px solid #f4ff63;
+    color: #fbffc4;
+  }
+  main .form-text {
+    color: #fbffc4;
+  }
+  main .rounded {
+    width: 600px;
+  }
+  main .col-6 p-3 mb-3 {
+    margin-right: 100%;
+    margin-left: 100%;
+  }
+  footer {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=estilo.css.map */

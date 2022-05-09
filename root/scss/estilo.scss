@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+$colorofbody:rgb(89,59,59);
+$colorofheaderandfooter: rgb(56,47,47);
+$colorofletters: rgb(251,255,196);
+$colorofborder: rgb(244,255,99);
+$width-max:100%;
+
+body{
+    background: $colorofbody;
+
+    header{
+        background: $colorofheaderandfooter;
+        border-bottom: 1px solid $colorofborder;
+    
+        .nav-link{
+            color: $colorofletters;
+        }
+    
+        .h-1{
+            font-family:'Times New Roman', Times, serif;
+            color: $colorofletters;
+            margin-left:1;
+        }
+    
+    }
+
+    main{
+        .menu{
+            text-align: center;
+        }
+        .row{
+            width:$width-max;
+        }
+        .anim{
+            color: $colorofletters;
+            animation-duration: 2s;
+            animation-name: aparecer;
+            animation-iteration-count: infinite;
+        }
+        .col-6{
+            background-color: $colorofheaderandfooter;
+            color: $colorofletters;
+            border: 1px solid $colorofborder;
+        }
+        @keyframes aparecer{
+            0%{
+                opacity:0;
+            }
+            100%{
+                opacity:1;
+            }
+        }
+        .anima{
+            color:$colorofletters;
+            animation-duration: 2s;
+            animation-name: aparecer;
+            animation-iteration-count: 1;
+        }
+        
+        .formu-container-fluid{
+            width: 400px;
+            background-color: $colorofheaderandfooter;
+            padding:30px;
+            margin: auto;
+            margin-top:50px;
+            margin-bottom: 50px;
+            border-radius:4px;
+            border:1px solid $colorofborder;
+            color: $colorofletters;
+        }
+        
+        .form-text{
+            color: $colorofletters;
+        }
+        
+        .Img{
+            width:600px;
+        }
+    }
+
+    footer{
+        background-color: $colorofheaderandfooter;
+        border-top:1px solid $colorofborder;
+        color: $colorofletters;
+        width: 100%;
+    }
+/*------Extend------*/
+    .button-basic  {
+        border: none;
+        padding: 15px 30px;
+        text-align: center;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    
+    .button-report  {
+        @extend .button-basic;
+        background-color: red;
+    }
+    .button-submit  {
+        @extend .button-basic;
+        background-color: green;
+        color: white;
+    }
+/*------Mixin------*/
+    @mixin prueba{
+        color: $colorofletters;
+        font-size: 25px;
+        font-weight: bold;
+        border: 1px solid blue;
+    }
+
+    .prueba1{
+        @include prueba;
+        background-color: $colorofheaderandfooter;
+    }
+}
+
+
+
+@media screen and (max-width: 320px){
+
+    header{
+        background-color: $colorofheaderandfooter;
+        border-bottom: 1px solid $colorofborder;
+        width:320px;
+
+        .nav-item{
+            width:$width-max;
+        }
+
+        .h-1{
+        text-align: center;
+        }
+    }
+
+    main{
+        width:$width-max;
+        }
+        .s-form-container-fluid{
+            width:$width-max;
+        }
+        .formu-container-fluid{
+            width:100%;
+            background-color: $colorofheaderandfooter;
+            margin:auto;
+            margin-top:50px;
+            margin-bottom: 50px;
+            border-radius:4px;
+            border:1px solid $colorofborder;
+            color: $colorofletters;
+            text-align: center;
+        }
+
+        .form-control{
+            width:$width-max;
+        }
+        .mb-3{
+            width:$width-max;
+        }
+
+        .rounded{
+            width:$width-max;
+        }
+    
+        .row{
+            width:$width-max;
+            margin: 0;
+        }
+    
+        footer{
+        width:$width-max;
+    }
+}
+
+@media screen and (min-width: 1200px){
+
+    /*En General*/
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    header{
+        background-color: $colorofheaderandfooter;
+        border-bottom: 1px solid $colorofborder;
+        width:100%;
+        
+        .h-1{
+            font-family:'Times New Roman', Times, serif;
+            color: $colorofletters;
+            margin-left:1;
+        }
+    }
+
+    main{
+        width:100%;
+        .formu-container-fluid{
+            width: 400px;
+            background-color: $colorofheaderandfooter;
+            padding:30px;
+            margin: auto;
+            margin-top:50px;
+            margin-bottom: 50px;
+            border-radius:4px;
+            border:1px solid $colorofborder;
+            color: $colorofletters;
+        }
+        
+        .form-text{
+            color: $colorofletters;
+        }
+
+        .rounded{
+            width:600px;
+        }
+
+        .col-6 p-3 mb-3{
+            margin-right:100%;
+            margin-left:100%;
+        }
+    }
+
+    footer{
+        width:100%;
+    }
+}
