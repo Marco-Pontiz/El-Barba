@@ -99,6 +99,9 @@ body{
         border-top:1px solid $colorofborder;
         color: $colorofletters;
         width: 100%;
+        .icono{
+            width:35px;
+        }
     }
 /*------Extend------*/
     .button-basic  {

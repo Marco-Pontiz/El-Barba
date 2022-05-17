@@ -120,6 +120,10 @@ body footer {
   width: 100%;
 }
 
+body footer .icono {
+  width: 35px;
+}
+
 body .button-basic, body .button-report, body .button-submit {
   border: none;
   padding: 15px 30px;
