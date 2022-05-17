@@ -24,6 +24,13 @@ body header .h-1 {
   margin-left: 1;
 }
 
+body header .logo {
+  width: 150px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
 body main .menu {
   text-align: center;
 }
@@ -74,6 +81,16 @@ body main .anima {
           animation-name: aparecer;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
+}
+
+body main .card-body {
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #382f2f;
+  color: #fbffc4;
+  border: 1px solid #f4ff63;
 }
 
 body main .formu-container-fluid {
@@ -142,6 +159,16 @@ body .prueba1 {
   }
   main {
     width: 100%;
+  }
+  .card-body {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    background-color: #382f2f;
+    color: #fbffc4;
+    border: 1px solid #f4ff63;
   }
   .s-form-container-fluid {
     width: 100%;

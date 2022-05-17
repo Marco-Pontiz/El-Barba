@@ -25,6 +25,10 @@ body{
             color: $colorofletters;
             margin-left:1;
         }
+        .logo{
+            width:150px;
+            justify-content: end;
+        }
     
     }
 
@@ -59,6 +63,14 @@ body{
             animation-duration: 2s;
             animation-name: aparecer;
             animation-iteration-count: 1;
+        }
+
+        .card-body{
+            width:$width-max;
+            justify-content: center;
+            background-color: $colorofheaderandfooter;
+            color:$colorofletters;
+            border:1px solid $colorofborder;
         }
         
         .formu-container-fluid{
@@ -141,6 +153,16 @@ body{
     main{
         width:$width-max;
         }
+
+        .card-body{
+            width:$width-max;
+            justify-content: center;
+            text-align: center;
+            background-color: $colorofheaderandfooter;
+            color:$colorofletters;
+            border:1px solid $colorofborder;
+        }
+
         .s-form-container-fluid{
             width:$width-max;
         }
